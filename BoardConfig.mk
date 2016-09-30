@@ -185,8 +185,9 @@ BOARD_USES_QC_TIME_SERVICES := true
 #Use dlmalloc instead of jemalloc for mallocs
 MALLOC_IMPL := dlmalloc
 
-# MKHW
-BOARD_HARDWARE_CLASS := hardware/cyanogen/cmhw
+# CMHW
+BOARD_HARDWARE_CLASS := device/xiaomi/leo/cmhw \
+	hardware/cyanogen/cmhw
 
 # Ril
 FEATURE_QCRIL_UIM_SAP_SERVER_MODE := true
