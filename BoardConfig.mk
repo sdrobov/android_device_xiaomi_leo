@@ -186,8 +186,7 @@ BOARD_USES_QC_TIME_SERVICES := true
 MALLOC_IMPL := dlmalloc
 
 # MKHW
-BOARD_HARDWARE_CLASS := device/xiaomi/leo/mkhw \
-     hardware/mokee/mkhw
+BOARD_HARDWARE_CLASS := hardware/cyanogen/cmhw
 
 # Ril
 FEATURE_QCRIL_UIM_SAP_SERVER_MODE := true

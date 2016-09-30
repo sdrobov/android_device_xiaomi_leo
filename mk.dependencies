@@ -12,12 +12,13 @@
     "target_path": "external/stlport"
   },
   {
-    "repository": "android_kernel_xiaomi_libra",
-    "branch": "mkm",
+    "repository": "android_kernel_xiaomi_leo",
+    "branch": "cm-13.0",
     "target_path": "kernel/xiaomi/leo"
   },
   {
     "repository": "android_vendor_xiaomi_leo",
+    "branch": "cm-13.0"
     "target_path": "vendor/xiaomi/leo"
   },
   {
