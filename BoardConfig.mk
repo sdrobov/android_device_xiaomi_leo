@@ -43,9 +43,6 @@ TARGET_USES_C2D_COMPOSITION := true
 TARGET_FORCE_HWC_FOR_VIRTUAL_DISPLAYS := true
 MAX_VIRTUAL_DISPLAY_DIMENSION := 2048
 
-MAX_EGL_CACHE_KEY_SIZE := 12*1024
-MAX_EGL_CACHE_SIZE := 2048*1024
-
 HAVE_ADRENO_SOURCE:= false
 OVERRIDE_RS_DRIVER:= libRSDriver_adreno.so
 BOARD_USES_OPENSSL_SYMBOLS := true
@@ -100,7 +97,7 @@ BOARD_USE_LEGACY_UI := true
 #Kernel
 BOARD_CUSTOM_BOOTIMG_MK := device/xiaomi/leo/mkbootimg.mk
 TARGET_KERNEL_SOURCE := kernel/xiaomi/leo
-TARGET_KERNEL_CONFIG := cyanogenmod_leo_defconfig
+TARGET_KERNEL_CONFIG := leo_user_defconfig
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x37 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 boot_cpus=0-5 ramoops_memreserve=2M androidboot.selinux=disabled
 BOARD_KERNEL_SEPARATED_DT := true
 BOARD_KERNEL_BASE        := 0x00000000
@@ -218,14 +215,14 @@ WPA_SUPPLICANT_VERSION          := VER_0_8_X
 TW_THEME := portrait_hdpi
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
-DEVICE_RESOLUTION := 1080x1920
+DEVICE_RESOLUTION := 1440x2560
 RECOVERY_SDCARD_ON_DATA := true
 TW_INCLUDE_CRYPTO := true
 #TW_TARGET_USES_QCOM_BSP := true
 #TW_NEW_ION_HEAP := true
 TW_FLASH_FROM_STORAGE := true
-TW_INTERNAL_STORAGE_PATH := "/data/media/0"
-TW_INTERNAL_STORAGE_MOUNT_POINT := "data"
+TW_INTERNAL_STORAGE_PATH := "/storage/self/primary"
+TW_INTERNAL_STORAGE_MOUNT_POINT := "sdcard"
 BOARD_HAS_NO_REAL_SDCARD := true
 TW_NO_USB_STORAGE := true
 TW_SCREEN_BLANK_ON_BOOT := true
